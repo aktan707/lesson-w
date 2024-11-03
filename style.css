@@ -1,22 +1,21 @@
-@media screen and (max-width: 800px) {
-
-    .panel,
-    .container {
-        position: relative;
-        width: 100%;
-        top: initial;
-    }
+.weather-info {
+    text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 800px) {
+@media (max-width: 600px) {
     .weather-app {
-        min-height: 40em;
+        padding: 10px;
+    }
+    .search {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) {
+    .search {
+        width: 300px;
+        padding: 10px;
     }
 }
 
@@ -37,16 +36,35 @@ h3 {
 }
 
 .weather-app {
-    min-height: 100vh;
-    background-image: url(./images/cloudy.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    position: relative;
-    transition: 500ms;
-    opacity: 1;
+    min-height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: #fff; 
+    position: relative; 
+    transition: 500ms; 
+    opacity: 1; 
 }
+
+.weather-app.doj {
+    background-image: url(./images/doj.gif);
+}
+
+.weather-app.sneg {
+    background-image: url(./images/sneg.gif);
+}
+
+.weather-app.obloch {
+    background-image: url(./images/obloch.gif);
+}
+
+.weather-app.asno {
+    background-image: url(./images/asno.gif); 
+}
+.weather-app.smoke {
+    background-image: url(./images/smoke.gif);
+}
+
 
 .weather-app::before {
     content: "";
