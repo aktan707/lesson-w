@@ -58,7 +58,7 @@ function updateWeatherUI(data) {
     updateBackground(weather[0].main);
 }
 function updateBackground(condition) {
-    weatherApp.classList.remove('doj', 'sneg', 'obloch', 'asno','smoke','fog');
+    weatherApp.classList.remove('doj', 'sneg', 'obloch', 'asno','smoke','fog','mist');
 
     switch (condition.toLowerCase()) {
         case 'clear':
@@ -79,6 +79,9 @@ function updateBackground(condition) {
             break;
         case 'fog':
             weatherApp.classList.add('fog');
+            break;
+        case 'mist':
+            weatherApp.classList.add('mist');
             break;
     }
 }

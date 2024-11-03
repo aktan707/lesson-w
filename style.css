@@ -48,6 +48,9 @@ h3 {
 .weather-app.fog {
     background-image: url(./images/fog.gif);
 }
+.weather-app.mist {
+    background-image: url(./images/mist.gif);
+}
 
 .weather-app::before {
     content: "";
