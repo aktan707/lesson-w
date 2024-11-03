@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <p>&nbsp;</p>
+            <div class="temp-data">
+                <h1 class="temp">16&#176;</h1>
+                <div class="city-time">
+                    <h1 class="name">BISHKEK</h1>
+                    <small>
+                        <span class="time">06:09</span>
+                        <span class="date">Monday Sep 19</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="./icons/sunny.png" class="icon" alt="icon" width="50" height="50">
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form id="locationInput">
+                <input type="text" class="search" placeholder="Search Location...">
+                <button type="submit" class="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </button>
+            </form>
+
+            <ul class="details">
+                <h4>Weather Details</h4>
+                <li>
+                    <span class="span-t">Temp max</span>
+                    <span class="temp-max">19°</span>
+                    <img src="./icons/temp-max.svg" alt="">
+                </li>
+                <li>
+                    <span class="span-t">Temp min</span>
+                    <span class="temp-min">15°</span>
+                    <img src="./icons/temp-min.svg" alt="">
+                </li>
+                <li>
+                    <span class="span-t">Humidity</span>
+                    <span class="humidity">58%</span>
+                    <img src="./icons/cap.svg" alt="">
+                </li>
+                <li>
+                    <span class="span-t">Cloudy</span>
+                    <span class="cloud">86%</span>
+                    <img src="./icons/bul.svg" alt="">
+                </li>
+                <li>
+                    <span class="span-t">Wind</span>
+                    <span class="wind">5 km/h</span>
+                    <img src="./icons/wind.svg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
